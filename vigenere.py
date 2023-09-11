@@ -1,5 +1,8 @@
 # Elaborado por Juan Pablo Ruiz y Martin Palomares
 # Problema 5
+
+laLlaveAmo = None # Variable global 
+
 def leerArchivo(nombreArchivo):
     try:
         with open(nombreArchivo, "r") as file:
@@ -46,7 +49,7 @@ def main():
     if not textoCifrado:
         return
     frecuencia = frecuenciaPalabra(textoCifrado)
-
+    global laLlaveAmo
     laLlaveAmo = probableClave(textoCifrado, claveTexto)
 
     print(f"La llave es: {laLlaveAmo}")
