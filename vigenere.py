@@ -1,3 +1,5 @@
+# Elaborado por Juan Pablo Ruiz y Martin Palomares
+# Problema 5
 def leerArchivo(nombreArchivo):
     try:
         with open(nombreArchivo, "r") as file:

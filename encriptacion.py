@@ -1,3 +1,5 @@
+# Elaborado por Juan Pablo Ruiz y Martin Palomares
+# Problema 2 
 def elCifrador(texto, clave):
     textoCifrado = ""
     alfabeto = "abcdefghijklmnopqrstuvwxyz " # 27 caracteres contando el espacio
