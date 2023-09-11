@@ -3,6 +3,9 @@
 #include <fstream>
 #include <map>
 
+//En este archivo se cumplen los puntos 1 y 4 de la tarea 
+//Elaborado por Juan Pablo Ruiz y Martin Palomares
+
 // Leer archivo y almacenar informacion
 std::string LeerArchivo(const std::string& nombreArchivo) {
     std::string contenido;
@@ -31,7 +34,7 @@ std::string frecuencia(const std::string& texto) {
 
     for (char caracter : texto) {
         if (std::isalpha(caracter)) { // Solo procesa letras
-            frecuencia[std::tolower(caracter)]++; // Convierte a minúscula y cuenta
+            frecuencia[std::tolower(caracter)]++; // Convierte a minúscula y empieza con el contador
         }
     }
 
@@ -39,7 +42,7 @@ std::string frecuencia(const std::string& texto) {
         char letra = par.first;
         int repeticiones = par.second;
 
-        if (repeticiones > 1) { // Solo muestra letras repetidas
+        if (repeticiones >= 1) { // Solo muestra letras que aparecen
             double porcentaje = (static_cast<double>(repeticiones) / texto.length()) * 100;
             resultado += letra;
             resultado += " se repite " + std::to_string(repeticiones) + " veces con porcentaje de: " + std::to_string(porcentaje) + "%\n";
@@ -58,7 +61,7 @@ std::string descifrarCesar(std::string mensajeCifrado, int clave) {
         // Buscar el índice del carácter en el alfabeto
         size_t indice = alfabeto.find(caracter);
 
-        // Si el carácter no está en el alfabeto, añadirlo tal cual al mensaje descifrado
+        // Si el carácter no está en el alfabeto se añade al mensahe tal cual por si hay puntos o comas, aunque estos no estaran cifrados.
         if (indice == std::string::npos) {
             mensajeDescifrado += caracter;
         } else {
