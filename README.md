@@ -18,6 +18,4 @@ encriptacion.py es un archivo en Python que implementa un algoritmo de encriptac
 El archivo vignere.py implementa un cifrado Vigenère. El cifrado Vigenère es una técnica de cifrado por sustitución que utiliza una clave para cifrar y descifrar el texto. Cada letra del mensaje se cifra utilizando una letra correspondiente de la clave.
 
 ## Aviso Importante
-Es importante tener en cuenta que los archivos en C++ mencionan problemas en la terminal, como problemas para introducir un nuevo mensaje para cifrar (cin >>) y posibles errores al leer archivos. Estos problemas pueden depender de la configuración de la terminal o el entorno en el que se ejecutan los programas. Asegúrate de verificar y ajustar la configuración de la terminal según sea necesario para que los programas funcionen correctamente.
-
-Además, es recomendable proporcionar información adicional sobre cómo ejecutar y usar estos programas en la sección "Instrucciones de Uso" del README si es necesario.
+Es importante tener en cuenta que los archivos en C++ mencionan problemas en la terminal, como problemas para introducir un nuevo mensaje para cifrar (cin >>) y posibles errores al leer archivos. Estos problemas pueden depender de la configuración de la terminal o el entorno en el que se ejecutan los programas.
